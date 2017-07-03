@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build && browserify init.js lib/index.js -o build/atsumaru.js"
+    "prepublish": "npm run build"
   },
   "files": [
     "lib"
@@ -16,7 +16,6 @@
   "devDependencies": {
     "@akashic/akashic-engine": "^1.12.2",
     "atsumaru-gameapi": "0.0.2",
-    "browserify": "^14.3.0",
     "typescript": "^2.2.2"
   }
 }
