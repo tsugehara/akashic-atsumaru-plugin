@@ -38,6 +38,7 @@ export class AtsumaruPlugin {
 }
 
 declare var console: any;
+
 export class StorageAPI extends AtsumaruAPI {
 	saveCurrentPlaylog(slotId: string) {
 		// 動かない・・
@@ -96,7 +97,7 @@ export class StorageAPI extends AtsumaruAPI {
 	}
 
 	listPlaylog() {
-		// TODO
+		return this.atsumaru.storage.getItems();
 	}
 
 	save(slotId: string, data: any): Promise<void> {
